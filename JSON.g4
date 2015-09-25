@@ -8,13 +8,13 @@ object :
 	| '{' '}'
 	;
 
-pair : STRING ':' VALUE;
+pair : STRING ':' value;
 
 array :
-	'[' VALUE (',' VALUE)* ']'
+	'[' value (',' value)* ']'
 	| '[' ']'
 	;
-VALUE :
+value :
 	STRING
 	| NUMBER
 	| object
